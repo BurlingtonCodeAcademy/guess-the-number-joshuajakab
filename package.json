@@ -1,20 +1,15 @@
 {
-  "name": "guess-the-number",
+  "name": "guess-number-reboot",
   "version": "1.0.0",
-  "description": "Before starting to code this project, please find a partner and play this game together verbally for a few rounds.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BurlingtonCodeAcademy/guess-the-number.git"
-  },
-  "keywords": ["nodejs", "games", "learn-to-program"],
+  "keywords": [],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BurlingtonCodeAcademy/guess-the-number/issues"
-  },
-  "homepage": "https://github.com/BurlingtonCodeAcademy/guess-the-number#readme"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

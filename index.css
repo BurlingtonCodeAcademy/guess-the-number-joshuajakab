@@ -1,0 +1,205 @@
+#container {
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "header header header header header"
+    "game game game sidebar sidebar"
+    "game game game sidebar sidebar"
+    "game game game sidebar sidebar"
+    "game game game sidebar sidebar"
+    "footer footer footer footer footer";
+  }
+
+body {
+    width: 98vw;
+    height: 100vh;
+    background-color: rgb(7,40,2,1);
+}
+
+#container {
+    width: 98vw;
+    height: 100vh;
+}
+
+#header {
+    grid-area: header;
+    display: grid;
+    
+    background: rgb(6,74,1);
+    background: linear-gradient(180deg, rgba(6,74,1,1) 0%, rgba(45,117,33,1) 52%, rgba(6,74,1,1) 100%);
+}
+
+#title {
+    max-height: 50px;
+    width: 98vw;
+    margin-top: 10px;
+}
+
+#tagline {
+    text-align: center;
+    width: 98vw;
+    font-size: 30px;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+}
+
+#sub-tag {
+    text-align: center;
+    width: 98vw;
+    font-size: 23px;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+}
+
+#game {
+    grid-area: game;
+    width: 609px;
+}
+
+#your-amount {
+    padding-left: 17vw;
+    padding-top: 10vh;
+    width: 45vw;
+    height: 200px;
+    margin: 15px;
+    background-image: url("/Images/YourAmount.svg");
+    background-repeat: no-repeat;
+    font-size: 90px;
+    font-family: "Abril Fatface", cursive;
+    color: #85C441 ;
+}
+
+#current-guess {
+    padding-left: 17vw;
+    padding-top: 10vh;
+    width: 45vw;
+    height: 200px;
+    margin: 15px;
+    background-image: url("/Images/CurrentGuess.svg");
+    background-repeat: no-repeat;
+    font-size: 90px;
+    font-family: "Abril Fatface", cursive;
+    color: #85C441 ;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #85C441;
+    margin: 15px;
+    width: 37vw;
+    height: 575px;
+    border: 2px #4B6730 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#instructions-one {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Abril Fatface", cursive;
+    color: #4B6730 ;
+}
+
+#player-number-submit {
+    background-color: #85C441;
+    border: 2px #4B6730 solid;
+    margin-top: 15px;
+}
+
+#submit {
+    background-color: #4B6730;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+    border: 2px rgb(7,40,2,1) solid;
+    margin-top: 15px;
+}
+
+#submit:disabled {
+    background-color: black;
+}
+
+#submit-guess {
+    background-color: #4B6730;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+    border: 2px rgb(7,40,2,1) solid;
+    margin-top: 15px;
+}
+
+#question {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Abril Fatface", cursive;
+    color: #4B6730 ;
+    margin-top: 15px;
+}
+
+#no-lower {
+    background-color: #4B6730;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+    border: 2px rgb(7,40,2,1) solid;
+    margin-top: 15px;
+    margin-left: 6vw;
+    height: 30px;
+}
+
+#no-lower:disabled {
+    background-color: black;
+}
+
+#no-higher {
+    background-color: #4B6730;
+    font-family: "Abril Fatface", cursive;
+    color: #f7e892;
+    border: 2px rgb(7,40,2,1) solid;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 30px;
+}
+
+#no-higher:disabled {
+    background-color: black;
+}
+
+#score-container {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Abril Fatface", cursive;
+    color: #4B6730 ;
+    margin-top: 15px;
+}
+
+#comp-score {
+    background-color: rgb(7,40,2,1);
+    color: #f7e892;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2rem;
+    width: 70%;
+    height: 8%;
+    padding: .7rem;
+}
+
+#user-score {
+    background-color: rgb(7,40,2,1);
+    color: #f7e892;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2rem;
+    width: 70%;
+    height: 8%;
+    padding: .7rem;
+}
+
+#footer {
+    grid-area: footer;
+}
