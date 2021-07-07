@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface:400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <section id="header">
+            <img id="title" src="/images/Title.svg"></img>
+            <div id="tagline">The game where you can win realMoney*</div>
+            <div id="sub-tag">*let realMoney = undefined</div>
+        </section>
+        <section id="game">
+
+            <div id="your-amount" value=""></div>
+
+            <div id="current-guess" value=""></div>
+        </section>
+        <section id="sidebar">
+            <div id="instructions-one">
+                Insert an amount between 1-100
+            </div>
+            <input id="player-number-submit" type="text" value='# between 1-100' href='#'></input>
+            <div id="button-container"><button id="submit" type="submit">Submit</button></div>
+            <div id="question"></div>
+            <div id="answer-container"></div>
+            <div id='score-container'>
+                Lowest Score Wins!
+            </div>
+            <div id='comp-score'>Computer's Score: </div>
+            <div id='user-score'>Your Score: </div>
+        </section>
+        <section id="footer"></section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html
